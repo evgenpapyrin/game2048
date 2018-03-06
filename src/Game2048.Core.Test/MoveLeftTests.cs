@@ -49,17 +49,6 @@ namespace Game2048.Core.Test
         [Fact]
         public void LeftTest_2()
         {
-            /*Script
-
-            0 0 2 2         4 0 0 0
-
-            0 0 0 0  Right  0 0 0 0
-                        =>                     
-            0 0 0 0         0 0 2 0
-
-            0 0 0 0         0 0 0 0
-            */
-
             int[,] valuesBeforeMove = new int[,]
            {
                { 0, 0, 2, 2},
@@ -83,7 +72,7 @@ namespace Game2048.Core.Test
               { 0, 0, 0, 0}
             };
 
-            int expectedScore = 0;
+            int expectedScore = 4;
             Tile newTile = new Tile(2, 2) { Value = 2 };
 
             AssertMove(
@@ -121,7 +110,7 @@ namespace Game2048.Core.Test
               { 0, 0, 0, 0}
             };
 
-            int expectedScore = 0;
+            int expectedScore = 8;
             Tile newTile = new Tile(1, 1) { Value = 2 };
 
             AssertMove(
@@ -136,17 +125,6 @@ namespace Game2048.Core.Test
         [Fact]
         public void LeftTest_4()
         {
-            /*Script
-
-           0 0 0 0         0 0 0 0
-
-           0 0 0 0   Left  0 2 0 0
-                       =>                     
-           2 8 4 4         2 8 8 0
-
-           0 0 0 0         0 0 0 0
-           */
-
             int[,] valuesBeforeMove = new int[,]
             {
                { 0, 0, 0, 0},
@@ -170,7 +148,7 @@ namespace Game2048.Core.Test
               { 0, 0, 0, 0}
             };
 
-            int expectedScore = 0;
+            int expectedScore = 8;
             Tile newTile = new Tile(1, 1) { Value = 2 };
 
             AssertMove(

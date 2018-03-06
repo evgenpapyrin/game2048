@@ -213,6 +213,7 @@ namespace Game2048.Core.Test
             moveAction(board);
 
             AssertValues(valuesAfterAction, ConvertToValuesArray(board.GetTiles().ToArray()));
+            Assert.Equal(expectedScore, board.CurrentScore);
         }
 
         private void AssertValues(int[,] expectedValues, int[,] actualValue)
