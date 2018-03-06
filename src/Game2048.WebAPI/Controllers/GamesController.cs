@@ -49,7 +49,7 @@ namespace Game2048.WebAPI.Controllers
         [HttpPost]
         public IActionResult Post([FromQuery]int userID)
         {
-            if(userID > 0)
+            if(userID <= 0)
             {
                 return BadRequest($"Parameter \"{nameof(userID)}\" must be greater than zero");
             }

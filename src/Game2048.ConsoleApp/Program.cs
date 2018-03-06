@@ -65,7 +65,7 @@ namespace Game2048.ConsoleApp
                 Console.WriteLine();
             }
 
-            Console.WriteLine("Press \"X\" to shut down.");
+            Console.WriteLine("Press \"C\" to shut down.");
         }
     }
 }
