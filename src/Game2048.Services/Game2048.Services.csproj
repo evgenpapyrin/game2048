@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Game2048.Core\Game2048.Core.csproj" />
+    <ProjectReference Include="..\Game2048.DAL\Game2048.DAL.csproj" />
+  </ItemGroup>
+
+</Project>
