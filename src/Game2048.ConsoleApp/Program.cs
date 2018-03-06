@@ -36,7 +36,7 @@ namespace Game2048.ConsoleApp
                         break;
                 }
 
-                if(readKey.Key == ConsoleKey.X)
+                if(readKey.Key == ConsoleKey.C)
                 {
                     break;
                 }
